@@ -62,7 +62,7 @@ public class URLDNS implements ObjectPayload<Object> {
                 URL obj = new URL(url);
 		        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		        con.setRequestMethod("GET");
-		        con.setRequestProperty("User-Agent", USER_AGENT);
+		        con.setRequestProperty("User-Agent", "Mozilla-Firefox");
 		        int responseCode = con.getResponseCode();
                 //add complete
 
