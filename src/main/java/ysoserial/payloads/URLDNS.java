@@ -6,6 +6,7 @@ import java.net.URLConnection;
 import java.net.URLStreamHandler;
 import java.util.HashMap;
 import java.net.URL;
+import java.net.HttpURLConnection;
 
 import ysoserial.payloads.annotation.Authors;
 import ysoserial.payloads.annotation.Dependencies;
